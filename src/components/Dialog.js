@@ -14,14 +14,14 @@ function Dialog({
       <div className="modal-dialog modal-dialog-centered text-dark" >
         <div className="modal-content">
           <div className="modal-header">
-            <h1>Header</h1>
+            <h1>Congratulations!</h1>
             <button className="btn-close" 
               onClick={onClose}
             //data-bs-dismiss="modal"
             ></button>
           </div>
-          <div className="modal-body">Body</div>
-          <div className="modal-footer">Footer</div>          
+          <div className="modal-body">You won a prize!</div>
+          <div className="modal-footer text-muted">No prizes available</div>          
         </div>
       </div>
 

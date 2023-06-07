@@ -4,6 +4,7 @@ function Star({
   onClick = f => f,
   number
 }) {
+  
   return (
   <div onClick={() => onClick(number)} className='col-auto star'>
       <FaStar 
