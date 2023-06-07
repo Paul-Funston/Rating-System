@@ -43,7 +43,7 @@ function StarRating({
         })}
       </div>
       <div className="row my-2">
-        <h3>{response}</h3>
+        <h2>{response}</h2>
       </div>
       
     </div>

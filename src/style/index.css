@@ -27,7 +27,7 @@ code {
 .star svg:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
-  box-shadow: inset 5px -2px 3px 1px gold;
+  /* box-shadow: inset 5px -2px 3px 1px gold; */
 }
 
 @keyframes shake {
