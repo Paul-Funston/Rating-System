@@ -20,12 +20,16 @@ function StarRating({
     let newArray = Array(numStars).fill(false);
     newArray.fill(true, 0, Math.min(n, numStars))
     setStarArray(newArray);
-    setResponse(scoreResponse[n])
+    if(scoreResponse[n]) {
+      setResponse(scoreResponse[n])
+    } else {
+      setResponse("");
+    }
   }
 
   
 return(
-  <div className="container justify-content-center text-center my-3 p-4" style={{maxWidth: "680px"}}>
+  <div className="container justify-content-center text-center p-4" style={{maxWidth: "680px"}}>
     <div className="row row-cols-5 justify-content-center">
       {starArray.map((star, index) => {
         return (
