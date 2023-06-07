@@ -4,7 +4,7 @@ import { useState } from "react";
 const scoreResponse = {
   0: "Click on your Rating",
   1: "Poor",
-  2: "Dissappointing",
+  2: "Disappointing",
   3: "Average",
   4: "Very Good",
   5: "Excellent"
