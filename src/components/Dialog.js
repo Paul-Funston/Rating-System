@@ -5,11 +5,11 @@ function Dialog({
 
   return(
     <div 
-      className={"modal fade" + `${active ? "show": ""}`} 
+      className={"modal fade" + `${active ? " show": ""}`} 
       id="modal"
       style={{display: active? "block" : "none",
       backgroundColor: "rgb(0 0 0 / 0.2)"
-    }}  
+      }}
     >
       <div className="modal-dialog modal-dialog-centered text-dark" >
         <div className="modal-content">

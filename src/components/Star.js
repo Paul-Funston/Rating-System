@@ -7,7 +7,6 @@ function Star({
   return (
   <div onClick={() => onClick(number)} className='col-auto star'>
       <FaStar 
-        
         fill={isFilled ? "gold" : "gray"}
         size={50}
       />

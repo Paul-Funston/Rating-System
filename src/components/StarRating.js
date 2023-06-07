@@ -16,6 +16,7 @@ function StarRating({
 
   const [starArray, setStarArray] = useState(Array(numStars).fill(false))
   const [response, setResponse] = useState(scoreResponse[0]);
+
   const handleClickStar = (n) => {
     let newArray = Array(numStars).fill(false);
     newArray.fill(true, 0, Math.min(n, numStars))
@@ -26,29 +27,27 @@ function StarRating({
       setResponse("");
     }
   }
-
   
-return(
-  <div className="container justify-content-center text-center p-4" style={{maxWidth: "680px"}}>
-    <div className="row row-cols-5 justify-content-center">
-      {starArray.map((star, index) => {
-        return (
-          <Star 
-            key={index}
-            isFilled={star} 
-            onClick={handleClickStar} 
-            number={index + 1}
+  return(
+    <div className="container text-center p-4">
+      <div className="row justify-content-center">
+        {starArray.map((star, index) => {
+          return (
+            <Star 
+              key={index}
+              isFilled={star} 
+              onClick={handleClickStar} 
+              number={index + 1}
             />
-        )}
-      )}
+          )
+        })}
+      </div>
+      <div className="row my-2">
+        <h3>{response}</h3>
+      </div>
+      
     </div>
-    <div className="row my-2">
-      <h3>{response}</h3>
-    </div>
-    
-  </div>
-)
-
+  )
 }
 
 export default StarRating;
